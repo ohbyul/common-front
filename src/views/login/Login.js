@@ -11,9 +11,9 @@ import { LOGIN_MEMBER } from '../../modules/action/actionTypes';
 const Login = (props) => {
     const dispatch = useDispatch();
     //--------------- session ---------------
-    const memberInfo =  decodeJwt("dtverseMember");
-    const token = getCookie("dtverseMember");
-    const saveMemberId = getCookie('dtverseMember-id');
+    const memberInfo =  decodeJwt("ohbyul");
+    const token = getCookie("ohbyul");
+    const saveMemberId = getCookie('ohbyul-id');
     //--------------- session ---------------
 
     //[1] loginInfo
@@ -41,7 +41,7 @@ const Login = (props) => {
     const onRemember = (e) => {
         setIsRemember(e.target.checked);
         if (!e.target.checked) {
-            removeCookie("dtverseMember-id");
+            removeCookie("ohbyul-id");
         }
     }
 
@@ -95,15 +95,15 @@ const Login = (props) => {
                     expires.setTime((Date.now() + 21600000 ) + ( 60 * 60 * 1000 * 9 * 1 ))      // 6시간
                     
                     //[4]쿠키 설정
-                    setCookie("dtverseMember", accessToken, {path:'/', expires})
+                    setCookie("ohbyul", accessToken, {path:'/', expires})
 
                     if (isRemember) {
                         // [4-1]아이디 저장 쿠키설정
                         const expires = new Date()
                         expires.setDate(expires.getDate()+7);
-                        setCookie("dtverseMember-id", loginInfo.memberId, {path:'/', expires});
+                        setCookie("ohbyul-id", loginInfo.memberId, {path:'/', expires});
                     } else {
-                        removeCookie("dtverseMember-id");
+                        removeCookie("ohbyul-id");
                     }
 
                     //[5] 로그인 성공 메인페이지 이동
@@ -116,7 +116,7 @@ const Login = (props) => {
                         window.location.replace("/")
                     }
                 }else if(res.payload.statusCode == 20006){ 
-                    sessionStorage.setItem('dtverseMember', JSON.stringify(res.payload));
+                    sessionStorage.setItem('ohbyul', JSON.stringify(res.payload));
                     props.history.push('/pw-change')
                 }else{
                     props.funcAlertMsg(res.payload.message)
@@ -138,7 +138,7 @@ const Login = (props) => {
             <div className="con-header">
                 <div>
                     <div className="h1 login-img"></div>
-                    <div className="subtxt">DTVERSE 공개 Portal에 오신 것을 환영합니다.</div>
+                    <div className="subtxt">환영합니다.</div>
                     <ul>
                         <li></li>
                         <li></li>
@@ -201,14 +201,14 @@ const Login = (props) => {
             </div>
             <div className="con-footer">
                 <div className="info-user">
-                    <div className="cursor" onClick={()=>props.history.push('/sign-up')}>
+                    {/* <div className="cursor" onClick={()=>props.history.push('/sign-up')}>
                         <div className="big-icon join"></div>
                         <div>회원가입</div>
-                    </div>
-                    <div className="cursor" onClick={()=>props.history.push('/find')}>
+                    </div> */}
+                    {/* <div className="cursor" onClick={()=>props.history.push('/find')}>
                         <div className="big-icon pw"></div>
                         <div>아이디/비밀번호 찾기</div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

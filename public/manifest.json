@@ -1,6 +1,6 @@
 {
-  "short_name": "DTVERSE",
-  "name": "DTVERSE",
+  "short_name": "common",
+  "name": "common",
   "icons": [
     {
       "src": "./assets/img/favicon.png",

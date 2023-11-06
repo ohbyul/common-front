@@ -8,7 +8,7 @@ import AuthRoute from '@/auth/AuthRoute.js'
 
 const AppContent = (props) => {
   let role = props.role
-  const token = getCookie("dtverseMember");
+  const token = getCookie("ohbyul");
 
   return (
     <Switch>

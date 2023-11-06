@@ -58,7 +58,7 @@ function App() {
   let axiosCnt = useRef(0)
   
   //login info
-  let token = getCookie('dtverseMember');
+  let token = getCookie('ohbyul');
 
   useEffect(()=>{
     if (process.env.NODE_ENV === 'production') {
@@ -73,7 +73,7 @@ function App() {
     //axios 호출시 인터셉트
     axios.interceptors.request.use(function (config) {
 
-      token = getCookie('dtverseMember');                                   //쿠키세팅
+      token = getCookie('ohbyul');                                   //쿠키세팅
       config.headers.common['Authorization'] = `Bearer ${token}`;     //토큰세팅
       
       axiosCnt.current += 1;
@@ -112,7 +112,7 @@ function App() {
   },[]);
 
   const redirectLogin = () => {
-    removeCookie('dtverseMember');
+    removeCookie('ohbyul');
     sessionStorage.clear();
     window.location.replace("/login")
   }

@@ -11,13 +11,13 @@ React is a JavaScript library for building user interfaces.
 
 ## Description
 
-DTVERSE(디티버스) 멤버 PORTAL - Front-END
+COMMON PORTAL - Front-END
 
 해당 프로젝트는 React 로 구성된 프론트엔드 프로젝트
 
-백엔드의 경우 GIT 경로는 아래와 같습니다.
+<!-- 백엔드의 경우 GIT 경로는 아래와 같습니다. -->
 
-DTVERSE(디티버스) MEMBER PORTAL BACK-END 소스 바로가기 - [GITLAB](https://gitlab.com/dtverse/be-dtverse-memberportal)
+<!-- DTVERSE(디티버스) MEMBER PORTAL BACK-END 소스 바로가기 - [GITLAB](https://gitlab.com/dtverse/be-dtverse-memberportal) -->
 
 
 [React](https://github.com/facebook/react) framework TypeScript starter repository.
@@ -58,7 +58,7 @@ $ npm run build
    .env (db 접속정보 및 구동 port 설정됨) -> git에서 관리하지 않고 개발자 로컬에서 관리함
 
 ## Creation date
-2023.05.30 by b.oh
+2023.11.06 by b.oh
 ### License
 
 React is [MIT licensed](https://github.com/facebook/react/blob/main/LICENSE).

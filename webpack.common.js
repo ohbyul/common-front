@@ -77,8 +77,8 @@ const config = {
                     minifyCSS: true,
                 },
             template: './public/index.html',
-            title: 'Dtverse',
-            description: `Dtverse`
+            title: 'common',
+            description: `common`
         }),
         new webpack.DefinePlugin({ 'process.env': JSON.stringify(process.env)})
     ]
