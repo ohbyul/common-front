@@ -15,9 +15,10 @@ const config =  {
         compress: true,
         open: true,
         port: 8000,
+        // host: 'https://be-common-5ce913bbd3df.herokuapp.com/',
         host: 'localhost',
         proxy: {
-            '/api': 'http://localhost:3000/',
+            '/api': 'https://be-common-5ce913bbd3df.herokuapp.com:3000/',
         }
     },
 }
