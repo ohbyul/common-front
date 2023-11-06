@@ -17,7 +17,7 @@ const config =  {
         port: 8000,
         host: 'localhost',
         proxy: {
-            '/api': 'http://localhost:2080/',
+            '/api': 'http://localhost:3000/',
         }
     },
 }
