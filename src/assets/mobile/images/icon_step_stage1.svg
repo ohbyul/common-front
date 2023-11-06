@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #7ebf42;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <circle class="cls-2" cx="38.21" cy="16.34" r="14.67"/>
+    <path class="cls-1" d="m54.97,21.13c-3.8,6.05-11.64,7.79-17.52,3.87-2.77-1.84-4.6-4.6-5.38-7.65-.87-3.42-.4-7.19,1.61-10.39,3.8-6.05,11.64-7.79,17.52-3.88,5.88,3.91,7.56,11.99,3.76,18.04Z"/>
+    <g>
+      <line class="cls-1" x1="38" y1="14.05" x2="50.67" y2="14.05"/>
+      <line class="cls-1" x1="44.33" y1="20.57" x2="44.33" y2="7.52"/>
+    </g>
+    <path class="cls-1" d="m54.75,27.44v17.74c0,1.09-.86,1.98-1.92,1.98H2.92c-1.06,0-1.92-.89-1.92-1.98V11.58c0-1.09.86-1.98,1.92-1.98h25.07"/>
+    <g>
+      <line class="cls-1" x1="15.09" y1="57" x2="40.66" y2="57"/>
+      <line class="cls-1" x1="21.64" y1="50.89" x2="21.64" y2="57"/>
+      <line class="cls-1" x1="34.11" y1="50.89" x2="34.11" y2="57"/>
+    </g>
+  </g>
+</svg>
